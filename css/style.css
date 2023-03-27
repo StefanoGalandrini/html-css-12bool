@@ -1,5 +1,5 @@
 :root {
-    --min-height: 50px;
+    --min-height: 35px;
     --main-bg-color: #006cfa;
     --nested-bg-color: #00b41c;
     color: white;
@@ -11,6 +11,21 @@
     background-color: var(--main-bg-color);
     border: 1px solid white;
     display: flex;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+}
+
+.contents {
+    padding: 0.5rem;
+}
+
+.nested {
+    background-color: var(--nested-bg-color);
+    flex: 0 0 auto;
+}
+
+.space {
+    height: 10px;
+    color: black;
 }
